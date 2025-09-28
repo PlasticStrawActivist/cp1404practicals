@@ -1,14 +1,6 @@
 MINIUM_PASSWORD_LENGTH = 8
 
 
-def get_password():
-    return input("Enter password: ")
-
-
-def print_password(password):
-    print("*" * len(password))
-
-
 def main():
     password = get_password()
 
@@ -17,6 +9,14 @@ def main():
         password = get_password()
 
     print_password()
+
+
+def get_password():
+    return input("Enter password: ")
+
+
+def print_password(password):
+    print("*" * len(password))
 
 
 main()
