@@ -5,6 +5,7 @@ Program for temperature conversion
 
 
 def main():
+    """Display a menu which allows for converions between celsius and fahrenheit."""
     MENU = """C - Convert Celsius to Fahrenheit
     F - Convert Fahrenheit to Celsius
     Q - Quit"""
@@ -27,10 +28,12 @@ def main():
 
 
 def convert_celsius_to_fahrenheit(celsius):
+    """Convert celsius to fahrenheit."""
     return celsius * 9.0 / 5 + 32
 
 
 def convert_fahrenheit_to_celsius(fahrenheit):
+    """Convert fahrenheit to celsius"""
     return 5 / 9 * (fahrenheit - 32)
 
 
