@@ -23,4 +23,5 @@ def determine_score_category(score):
     return "Bad"
 
 
-main()
+if __name__ == "__main__":
+    main()

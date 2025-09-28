@@ -9,17 +9,16 @@ MENU = """
 
 
 def main():
-    print_menu()
     score = get_valid_score()
-
+    print_menu()
     choice = get_choice()
     while choice != "Q":
         if choice == "G":
-            print(f"Score is {score}")
+            score = get_valid_score()
         elif choice == "P":
             print(determine_score_category(score))
         elif choice == "S":
-            print("*" * score)
+            print(print_stars(score))
         else:
             print("Invalid option")
 
@@ -43,14 +42,6 @@ def get_valid_score():
         print("Score must be between 0 and 100 inclusive")
         score = int(input("Enter score: "))
     return score
-
-
-def print_score(score):
-    print(f"Score is {score}")
-
-
-def print_result(score):
-    print(f"Score is {score}")
 
 
 def print_stars(score):
