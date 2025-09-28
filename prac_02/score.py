@@ -20,7 +20,7 @@ def main():
     user_score = float(input("Enter score: "))
     random_score = randint(0, 100)
     print(determine_score_category(user_score))
-    print(f"Random score of {random_score} is {determine_score_category(random_score)}")
+    print(f"Random score of {random_score} {determine_score_category(random_score)}")
 
 
 main()
