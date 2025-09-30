@@ -19,7 +19,7 @@ MAX_PRICE = 100.0
 INITIAL_PRICE = 10.0
 
 price = INITIAL_PRICE
-day = 0
+number_of_days = 0
 
 out_file = open(FILENAME, "w")
 print(f"Starting price is: ${price:,.2f}", out_file=out_file)
@@ -38,7 +38,7 @@ while MIN_PRICE <= price <= MAX_PRICE:
         price_change = random.uniform(-MAX_DECREASE, 0)
 
     price *= 1 + price_change
-    day += 1
-    print(f"On day {day} price is: ${price:,.2f}", file=out_file)
+    number_of_days += 1
+    print(f"On day {number_of_days} price is: ${price:,.2f}", file=out_file)
 
 out_file.close()
