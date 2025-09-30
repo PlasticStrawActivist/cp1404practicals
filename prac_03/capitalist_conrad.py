@@ -10,14 +10,19 @@ The price should be displayed to the nearest cent (e.g. $33.59, not $33.59182329
 
 import random
 
-MAX_INCREASE = 0.1  # 10%
+
+FILENAME = "prac_03/stock.txt"
+MAX_INCREASE = 0.175  # 17.5%
 MAX_DECREASE = 0.05  # 5%
-MIN_PRICE = 0.01
-MAX_PRICE = 1000.0
+MIN_PRICE = 1.0
+MAX_PRICE = 100.0
 INITIAL_PRICE = 10.0
 
 price = INITIAL_PRICE
-print(f"${price:,.2f}")
+day = 0
+
+out_file = open(FILENAME, "w")
+print(f"Starting price is: ${price:,.2f}", out_file=out_file)
 
 while MIN_PRICE <= price <= MAX_PRICE:
     price_change = 0
@@ -33,4 +38,7 @@ while MIN_PRICE <= price <= MAX_PRICE:
         price_change = random.uniform(-MAX_DECREASE, 0)
 
     price *= 1 + price_change
-    print(f"${price:,.2f}")
+    day += 1
+    print(f"On day {day} price is: ${price:,.2f}", file=out_file)
+
+out_file.close()
