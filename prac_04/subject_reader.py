@@ -3,7 +3,7 @@ CP1404/CP5632 Practical
 Data file -> lists program
 """
 
-FILENAME = "prac_04/subject_data.txt"
+FILENAME = "subject_data.txt"
 
 
 def main():
