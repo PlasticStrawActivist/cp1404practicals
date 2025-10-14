@@ -15,7 +15,7 @@ for word in text.lower().split(" "):
 
 word_occurrences = dict(sorted(word_occurrences.items()))
 
-width = max([len(word) for word in word_occurrences.keys()])
+width = max((len(word) for word in word_occurrences.keys()))
 
 for word, number_of_occurrences in word_occurrences.items():
     print(f"{word:{width}} : {number_of_occurrences}")
