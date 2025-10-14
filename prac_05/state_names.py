@@ -15,8 +15,8 @@ STATE_KEY_MAP = {
     "SA": "South Australia",
 }
 
-for key in STATE_KEY_MAP:
-    print(f"{key:3} is {STATE_KEY_MAP[key]}")
+for short_name, long_name in STATE_KEY_MAP.items():
+    print(f"{short_name:3} is {long_name}")
 
 state_code = input("Enter short state: ").upper()
 while state_code != "":
