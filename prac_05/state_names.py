@@ -4,8 +4,7 @@ State names in a dictionary
 File needs reformatting
 """
 
-# TODO: Reformat this file so the dictionary code follows PEP 8 convention
-CODE_TO_NAME = {
+STATE_KEY_MAP = {
     "QLD": "Queensland",
     "NSW": "New South Wales",
     "NT": "Northern Territory",
@@ -15,12 +14,14 @@ CODE_TO_NAME = {
     "TAS": "Tasmania",
     "SA": "South Australia",
 }
-print(CODE_TO_NAME)
 
-state_code = input("Enter short state: ")
+for key in STATE_KEY_MAP:
+    print(f"{key:3} is {STATE_KEY_MAP[key]}")
+
+state_code = input("Enter short state: ").upper()
 while state_code != "":
-    if state_code in CODE_TO_NAME:
-        print(state_code, "is", CODE_TO_NAME[state_code])
-    else:
+    try:
+        print(state_code, "is", STATE_KEY_MAP[state_code])
+    except KeyError:
         print("Invalid short state")
-    state_code = input("Enter short state: ")
+    state_code = input("Enter short state: ").upper()
