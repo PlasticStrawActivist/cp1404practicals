@@ -1,3 +1,9 @@
+"""
+Wimbledon
+Estimate: 20 minutes
+Actual:   20 minutes, 31 seconds
+"""
+
 FILENAME = "wimbledon.csv"
 
 
