@@ -1,4 +1,4 @@
-FILENAME = "prac_05/wimbledon.csv"
+FILENAME = "wimbledon.csv"
 
 
 def main():
