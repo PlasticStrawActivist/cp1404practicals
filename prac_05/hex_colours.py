@@ -3,7 +3,7 @@ CP1404/CP5632 Practical
 Color names in a dictionary
 """
 
-COLOUR_KEY_MAP = {
+COLOUR_TO_HEX = {
     "absolute zero": 0x0048BA,
     "acid Green": 0xB0BF1A,
     "alice blue": 0xF0F8FF,
@@ -24,7 +24,7 @@ while colour_code != "":
         print(
             colour_code.title(),
             "is",
-            hex(COLOUR_KEY_MAP[colour_code]).replace("0x", "#"),
+            hex(COLOUR_TO_HEX[colour_code]).replace("0x", "#"),
         )
     except KeyError:
         print("Invalid colour name")
