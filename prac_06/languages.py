@@ -1,7 +1,7 @@
 """
 Languages
 Estimate: 2 minutes
-Actual: 2 mintues, 34 seconds
+Actual:   2 mintues, 34 seconds
 """
 
 from prac_06.programming_language import ProgrammingLanguge

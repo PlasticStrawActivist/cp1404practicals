@@ -1,14 +1,14 @@
 """
 Guitar
 Estimate: 20 minutes
-Actual:
+Actual:   21 minutes, 28 seconds
 """
 
 from prac_06.guitar import Guitar
 
 
 def main():
-    """Guitar program"""
+    """Guitar program."""
     print("My guitars")
     guitars = []
     name = input("Name: ")
